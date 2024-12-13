@@ -29,3 +29,10 @@ Esta aplicación de iOS está programada en Swift y utiliza SwiftUI para la inte
 1. ```cd src/uvg-tour-app```
 2. ```abrir UVG\ Tour.xcodeproj```
 3. Ejecutar la aplicación en un simulador o en un dispositivo físico.
+
+
+## Demostración
+A continuación se muestra un video de la aplicación en funcionamiento:
+
+[Ver demo del proyecto](demo/Demo.mp4)
+
