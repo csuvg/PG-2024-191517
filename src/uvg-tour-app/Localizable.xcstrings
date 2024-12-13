@@ -1,0 +1,179 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%f meters" : {
+
+    },
+    "🔎" : {
+
+    },
+    "🧭" : {
+
+    },
+    "arrived" : {
+      "comment" : "The user has arrived to a destination",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arrived"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Llegaste"
+          }
+        }
+      }
+    },
+    "distanceMeter" : {
+      "comment" : "Distance in meter singular",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d meter"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d metro"
+          }
+        }
+      }
+    },
+    "distanceMetersPlural" : {
+      "comment" : "Distance in meter plural",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d meters"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d metros"
+          }
+        }
+      }
+    },
+    "finish" : {
+      "comment" : "Finish tour",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminar"
+          }
+        }
+      }
+    },
+    "Hello, world!" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hola mundo!"
+          }
+        }
+      }
+    },
+    "next" : {
+      "comment" : "Next item",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siguiente"
+          }
+        }
+      }
+    },
+    "pointsCompleted" : {
+      "comment" : "Stops completed",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d of %d stops"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d de %d puntos"
+          }
+        }
+      }
+    },
+    "Sensors detected: " : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sensores detectados"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
+          }
+        },
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar"
+          }
+        }
+      }
+    },
+    "Start tour" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar tour"
+          }
+        }
+      }
+    },
+    "Tours" : {
+      "localizations" : {
+        "es-419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tours"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
