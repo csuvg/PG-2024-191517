@@ -36,3 +36,6 @@ A continuación se muestra un video de la aplicación en funcionamiento:
 
 [Ver demo del proyecto](demo/Demo.mp4)
 
+
+## Informe Final
+En la carpeta `docs` se encuentra un PDF con el informe final del proyecto.
