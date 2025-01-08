@@ -1,0 +1,56 @@
+# Xcode
+DerivedData/
+.idea/
+xcuserdata/
+*.xcuserstate
+*.xcworkspace
+
+# Swift Package Manager
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+fastlane/results/
+
+# Archives
+*.xcarchive
+
+# Miscellaneous
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Optional - OS generated files
+.DS_Store
+*.swp
+*.lock
+*~
+.profile
+# AppCode
+.idea/
+
+# Optional - Logs
+*.log
+*.xcactivitylog
+*.manifest
+
+# Optional - Bundler
+.bundle/
+
+# 
+

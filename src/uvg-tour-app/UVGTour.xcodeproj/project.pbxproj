@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		702BBA572C8125460017C722 /* ARTourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702BBA562C8125460017C722 /* ARTourView.swift */; };
+		70410AAB2CCB1155009A0546 /* InterestPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70410AAA2CCB1155009A0546 /* InterestPointView.swift */; };
+		704D30792C83D0A100B2B7C6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704D30782C83D0A100B2B7C6 /* LocationManager.swift */; };
+		705456212C99D31700E680C6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 705456202C99D31700E680C6 /* Localizable.xcstrings */; };
+		705A66682C9A51C80006D62B /* arrow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 705A66672C9A51C80006D62B /* arrow.usdz */; };
+		706004882C7EAA3F003AA384 /* TourProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706004872C7EAA3F003AA384 /* TourProgressIndicatorView.swift */; };
+		7060048D2C7ECB82003AA384 /* EstimoteUWB.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706004892C7ECB32003AA384 /* EstimoteUWB.xcframework */; };
+		7060048E2C7ECB82003AA384 /* EstimoteUWB.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 706004892C7ECB32003AA384 /* EstimoteUWB.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		70BB352C2C713EDB00120FA6 /* UVGTourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB352B2C713EDB00120FA6 /* UVGTourApp.swift */; };
+		70BB352E2C713EDB00120FA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB352D2C713EDB00120FA6 /* ContentView.swift */; };
+		70BB35302C713EDC00120FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BB352F2C713EDC00120FA6 /* Assets.xcassets */; };
+		70BB35332C713EDC00120FA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70BB35322C713EDC00120FA6 /* Preview Assets.xcassets */; };
+		70BB353F2C713FC800120FA6 /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB353E2C713FC800120FA6 /* Tour.swift */; };
+		70BB35432C71432B00120FA6 /* SensorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB35422C71432B00120FA6 /* SensorRepository.swift */; };
+		70BB35482C71440E00120FA6 /* SensorRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB35472C71440E00120FA6 /* SensorRepositoryImpl.swift */; };
+		70BB354A2C71444500120FA6 /* SocketIOSensorDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB35492C71444500120FA6 /* SocketIOSensorDatasource.swift */; };
+		70BB354C2C71445000120FA6 /* EstimoteSensorDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB354B2C71445000120FA6 /* EstimoteSensorDatasource.swift */; };
+		70BB35532C7146C000120FA6 /* TestSensorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB35522C7146C000120FA6 /* TestSensorScreen.swift */; };
+		70BB35552C7147A500120FA6 /* TestSensorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB35542C7147A500120FA6 /* TestSensorViewModel.swift */; };
+		70BB35572C71482C00120FA6 /* WatchSensorsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB35562C71482C00120FA6 /* WatchSensorsUseCase.swift */; };
+		70BB35592C71488600120FA6 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB35582C71488600120FA6 /* Sensor.swift */; };
+		70BB35612C71510E00120FA6 /* UVGTourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB35602C71510E00120FA6 /* UVGTourTests.swift */; };
+		70BB356B2C71513100120FA6 /* WatchSensorsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB356A2C71513100120FA6 /* WatchSensorsUseCaseTests.swift */; };
+		70BB356F2C71523800120FA6 /* FakeSensorsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BB356E2C71523800120FA6 /* FakeSensorsDatasource.swift */; };
+		70BBC1302C7FC9E200358431 /* TourContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBC12F2C7FC9E200358431 /* TourContainer.swift */; };
+		70BBC1352C7FCE7200358431 /* TourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBC1342C7FCE7200358431 /* TourTests.swift */; };
+		70BDDC1F2C7A4DD500C4E735 /* TourSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDDC1E2C7A4DD500C4E735 /* TourSelection.swift */; };
+		70BDDC212C7A523B00C4E735 /* TourScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDDC202C7A523B00C4E735 /* TourScreen.swift */; };
+		70BDDC242C7A541200C4E735 /* TourStopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDDC232C7A541200C4E735 /* TourStopView.swift */; };
+		70BDDC262C7A568C00C4E735 /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDDC252C7A568C00C4E735 /* Sizes.swift */; };
+		70BDDC282C7A570900C4E735 /* TourProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDDC272C7A570900C4E735 /* TourProgressView.swift */; };
+		70BDDC2A2C7A586300C4E735 /* TourViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BDDC292C7A586300C4E735 /* TourViewModel.swift */; };
+		70DC53322C7D432100F6A45A /* DistanceIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DC53312C7D432100F6A45A /* DistanceIndicatorView.swift */; };
+		70EFA5EF2C7163FD00A45190 /* WebSocketSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA5EE2C7163FD00A45190 /* WebSocketSensor.swift */; };
+		70EFA5F42C729F9E00A45190 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA5F32C729F9E00A45190 /* Errors.swift */; };
+		70EFA5F72C72A0A600A45190 /* ToursListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA5F62C72A0A600A45190 /* ToursListScreen.swift */; };
+		70EFA5F92C72A0CF00A45190 /* String+Hardcoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA5F82C72A0CF00A45190 /* String+Hardcoded.swift */; };
+		70EFA5FB2C72A1CB00A45190 /* ToursRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA5FA2C72A1CB00A45190 /* ToursRepository.swift */; };
+		70EFA5FF2C72A28100A45190 /* LocalToursDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA5FE2C72A28100A45190 /* LocalToursDatasource.swift */; };
+		70EFA6012C72A2F800A45190 /* ToursRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA6002C72A2F800A45190 /* ToursRepositoryImpl.swift */; };
+		70EFA6032C72A39B00A45190 /* ListToursUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA6022C72A39B00A45190 /* ListToursUseCase.swift */; };
+		70EFA6092C72A46900A45190 /* ListToursUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA6082C72A46900A45190 /* ListToursUseCaseTests.swift */; };
+		70EFA60B2C72A91500A45190 /* ToursListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA60A2C72A91500A45190 /* ToursListViewModel.swift */; };
+		70EFA6102C72AB8F00A45190 /* ToursListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EFA60F2C72AB8F00A45190 /* ToursListViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70BB35622C71510E00120FA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70BB35202C713EDB00120FA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70BB35272C713EDB00120FA6;
+			remoteInfo = UVGTour;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7060048F2C7ECB82003AA384 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7060048E2C7ECB82003AA384 /* EstimoteUWB.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		702BBA562C8125460017C722 /* ARTourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTourView.swift; sourceTree = "<group>"; };
+		70410AAA2CCB1155009A0546 /* InterestPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestPointView.swift; sourceTree = "<group>"; };
+		704D30782C83D0A100B2B7C6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		705456202C99D31700E680C6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		705A66672C9A51C80006D62B /* arrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = arrow.usdz; path = ../../../../../Downloads/arrow.usdz; sourceTree = "<group>"; };
+		706004872C7EAA3F003AA384 /* TourProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourProgressIndicatorView.swift; sourceTree = "<group>"; };
+		706004892C7ECB32003AA384 /* EstimoteUWB.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EstimoteUWB.xcframework; path = "../../../Downloads/iOS-Estimote-UWB-SDK-master/EstimoteUWB.xcframework"; sourceTree = "<group>"; };
+		706004902C7ECD72003AA384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		70BB35282C713EDB00120FA6 /* UVGTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UVGTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BB352B2C713EDB00120FA6 /* UVGTourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVGTourApp.swift; sourceTree = "<group>"; };
+		70BB352D2C713EDB00120FA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		70BB352F2C713EDC00120FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70BB35322C713EDC00120FA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70BB353E2C713FC800120FA6 /* Tour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
+		70BB35422C71432B00120FA6 /* SensorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorRepository.swift; sourceTree = "<group>"; };
+		70BB35472C71440E00120FA6 /* SensorRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorRepositoryImpl.swift; sourceTree = "<group>"; };
+		70BB35492C71444500120FA6 /* SocketIOSensorDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOSensorDatasource.swift; sourceTree = "<group>"; };
+		70BB354B2C71445000120FA6 /* EstimoteSensorDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimoteSensorDatasource.swift; sourceTree = "<group>"; };
+		70BB35522C7146C000120FA6 /* TestSensorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSensorScreen.swift; sourceTree = "<group>"; };
+		70BB35542C7147A500120FA6 /* TestSensorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSensorViewModel.swift; sourceTree = "<group>"; };
+		70BB35562C71482C00120FA6 /* WatchSensorsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSensorsUseCase.swift; sourceTree = "<group>"; };
+		70BB35582C71488600120FA6 /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		70BB355E2C71510E00120FA6 /* UVGTourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UVGTourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BB35602C71510E00120FA6 /* UVGTourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UVGTourTests.swift; sourceTree = "<group>"; };
+		70BB356A2C71513100120FA6 /* WatchSensorsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSensorsUseCaseTests.swift; sourceTree = "<group>"; };
+		70BB356E2C71523800120FA6 /* FakeSensorsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSensorsDatasource.swift; sourceTree = "<group>"; };
+		70BBC12F2C7FC9E200358431 /* TourContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourContainer.swift; sourceTree = "<group>"; };
+		70BBC1342C7FCE7200358431 /* TourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTests.swift; sourceTree = "<group>"; };
+		70BDDC1E2C7A4DD500C4E735 /* TourSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourSelection.swift; sourceTree = "<group>"; };
+		70BDDC202C7A523B00C4E735 /* TourScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourScreen.swift; sourceTree = "<group>"; };
+		70BDDC232C7A541200C4E735 /* TourStopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourStopView.swift; sourceTree = "<group>"; };
+		70BDDC252C7A568C00C4E735 /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		70BDDC272C7A570900C4E735 /* TourProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourProgressView.swift; sourceTree = "<group>"; };
+		70BDDC292C7A586300C4E735 /* TourViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewModel.swift; sourceTree = "<group>"; };
+		70DC53312C7D432100F6A45A /* DistanceIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceIndicatorView.swift; sourceTree = "<group>"; };
+		70EFA5EE2C7163FD00A45190 /* WebSocketSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketSensor.swift; sourceTree = "<group>"; };
+		70EFA5F32C729F9E00A45190 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		70EFA5F62C72A0A600A45190 /* ToursListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursListScreen.swift; sourceTree = "<group>"; };
+		70EFA5F82C72A0CF00A45190 /* String+Hardcoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Hardcoded.swift"; sourceTree = "<group>"; };
+		70EFA5FA2C72A1CB00A45190 /* ToursRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursRepository.swift; sourceTree = "<group>"; };
+		70EFA5FE2C72A28100A45190 /* LocalToursDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalToursDatasource.swift; sourceTree = "<group>"; };
+		70EFA6002C72A2F800A45190 /* ToursRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursRepositoryImpl.swift; sourceTree = "<group>"; };
+		70EFA6022C72A39B00A45190 /* ListToursUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListToursUseCase.swift; sourceTree = "<group>"; };
+		70EFA6082C72A46900A45190 /* ListToursUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListToursUseCaseTests.swift; sourceTree = "<group>"; };
+		70EFA60A2C72A91500A45190 /* ToursListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursListViewModel.swift; sourceTree = "<group>"; };
+		70EFA60F2C72AB8F00A45190 /* ToursListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursListViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70BB35252C713EDB00120FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7060048D2C7ECB82003AA384 /* EstimoteUWB.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BB355B2C71510E00120FA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		704D30772C83D08E00B2B7C6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				704D30782C83D0A100B2B7C6 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		70BB351F2C713EDB00120FA6 = {
+			isa = PBXGroup;
+			children = (
+				705456202C99D31700E680C6 /* Localizable.xcstrings */,
+				70BB352A2C713EDB00120FA6 /* UVGTour */,
+				70BB355F2C71510E00120FA6 /* UVGTourTests */,
+				70BB35292C713EDB00120FA6 /* Products */,
+				70BB35712C715BA700120FA6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70BB35292C713EDB00120FA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70BB35282C713EDB00120FA6 /* UVGTour.app */,
+				70BB355E2C71510E00120FA6 /* UVGTourTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70BB352A2C713EDB00120FA6 /* UVGTour */ = {
+			isa = PBXGroup;
+			children = (
+				70E90E7B2C83A147004D5A5C /* 3DModels */,
+				706004902C7ECD72003AA384 /* Info.plist */,
+				70BDDC1C2C7A4DC100C4E735 /* Application */,
+				70BB353A2C713F6A00120FA6 /* Presentation */,
+				70BB353C2C713F8300120FA6 /* Data */,
+				70BB35392C713F6300120FA6 /* Domain */,
+				70BB353B2C713F7C00120FA6 /* Core */,
+				70BB352B2C713EDB00120FA6 /* UVGTourApp.swift */,
+				70BB352D2C713EDB00120FA6 /* ContentView.swift */,
+				70BB352F2C713EDC00120FA6 /* Assets.xcassets */,
+				70BB35312C713EDC00120FA6 /* Preview Content */,
+			);
+			path = UVGTour;
+			sourceTree = "<group>";
+		};
+		70BB35312C713EDC00120FA6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				70BB35322C713EDC00120FA6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		70BB35392C713F6300120FA6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				70BB35412C71431C00120FA6 /* Repositories */,
+				70BB354F2C7144AA00120FA6 /* UseCases */,
+				70BB35402C71431600120FA6 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		70BB353A2C713F6A00120FA6 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				70BDDC222C7A540800C4E735 /* Views */,
+				70BB35442C7143E400120FA6 /* Screens */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		70BB353B2C713F7C00120FA6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				704D30772C83D08E00B2B7C6 /* Managers */,
+				70BB354E2C71449400120FA6 /* Utils */,
+				70BB354D2C71448F00120FA6 /* Extensions */,
+				70EFA5F32C729F9E00A45190 /* Errors.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		70BB353C2C713F8300120FA6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA5ED2C7163F400A45190 /* Models */,
+				70BB35462C7143FE00120FA6 /* Repository */,
+				70BB35452C7143EC00120FA6 /* Datasource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		70BB35402C71431600120FA6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				70BB353E2C713FC800120FA6 /* Tour.swift */,
+				70BB35582C71488600120FA6 /* Sensor.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		70BB35412C71431C00120FA6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				70BB35422C71432B00120FA6 /* SensorRepository.swift */,
+				70EFA5FA2C72A1CB00A45190 /* ToursRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		70BB35442C7143E400120FA6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA5F52C72A09700A45190 /* Tours */,
+				70BB35512C7146B100120FA6 /* TestSensors */,
+				70BBC12E2C7FC9B400358431 /* Modifiers */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		70BB35452C7143EC00120FA6 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA5FD2C72A26400A45190 /* Tours */,
+				70EFA5FC2C72A25A00A45190 /* Sensors */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		70BB35462C7143FE00120FA6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				70BB35472C71440E00120FA6 /* SensorRepositoryImpl.swift */,
+				70EFA6002C72A2F800A45190 /* ToursRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		70BB354D2C71448F00120FA6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA5F82C72A0CF00A45190 /* String+Hardcoded.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		70BB354E2C71449400120FA6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				70BDDC252C7A568C00C4E735 /* Sizes.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		70BB354F2C7144AA00120FA6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA6052C72A3A700A45190 /* Sensors */,
+				70EFA6042C72A3A100A45190 /* Tours */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		70BB35512C7146B100120FA6 /* TestSensors */ = {
+			isa = PBXGroup;
+			children = (
+				70BB35522C7146C000120FA6 /* TestSensorScreen.swift */,
+				70BB35542C7147A500120FA6 /* TestSensorViewModel.swift */,
+			);
+			path = TestSensors;
+			sourceTree = "<group>";
+		};
+		70BB355F2C71510E00120FA6 /* UVGTourTests */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA60C2C72AB6A00A45190 /* Presentation */,
+				70BB35672C71511200120FA6 /* Domain */,
+				70BB356C2C71520D00120FA6 /* Test Utils */,
+				70BB35602C71510E00120FA6 /* UVGTourTests.swift */,
+			);
+			path = UVGTourTests;
+			sourceTree = "<group>";
+		};
+		70BB35672C71511200120FA6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				70BBC1312C7FCE4800358431 /* Entities */,
+				70BB35682C71511900120FA6 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		70BB35682C71511900120FA6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA6072C72A45200A45190 /* Tours */,
+				70EFA6062C72A44C00A45190 /* Sensors */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		70BB356C2C71520D00120FA6 /* Test Utils */ = {
+			isa = PBXGroup;
+			children = (
+				70BB356D2C71521400120FA6 /* Mocks */,
+			);
+			path = "Test Utils";
+			sourceTree = "<group>";
+		};
+		70BB356D2C71521400120FA6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				70BB356E2C71523800120FA6 /* FakeSensorsDatasource.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		70BB35712C715BA700120FA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				706004892C7ECB32003AA384 /* EstimoteUWB.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70BBC12E2C7FC9B400358431 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				70BBC12F2C7FC9E200358431 /* TourContainer.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		70BBC1312C7FCE4800358431 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				70BBC1342C7FCE7200358431 /* TourTests.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		70BDDC1C2C7A4DC100C4E735 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				70BDDC1D2C7A4DC600C4E735 /* AppState */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		70BDDC1D2C7A4DC600C4E735 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				70BDDC1E2C7A4DD500C4E735 /* TourSelection.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		70BDDC222C7A540800C4E735 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				70BDDC232C7A541200C4E735 /* TourStopView.swift */,
+				70BDDC272C7A570900C4E735 /* TourProgressView.swift */,
+				70DC53312C7D432100F6A45A /* DistanceIndicatorView.swift */,
+				706004872C7EAA3F003AA384 /* TourProgressIndicatorView.swift */,
+				702BBA562C8125460017C722 /* ARTourView.swift */,
+				70410AAA2CCB1155009A0546 /* InterestPointView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		70E90E7B2C83A147004D5A5C /* 3DModels */ = {
+			isa = PBXGroup;
+			children = (
+				705A66672C9A51C80006D62B /* arrow.usdz */,
+			);
+			path = 3DModels;
+			sourceTree = "<group>";
+		};
+		70EFA5ED2C7163F400A45190 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA5EE2C7163FD00A45190 /* WebSocketSensor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70EFA5F52C72A09700A45190 /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA5F62C72A0A600A45190 /* ToursListScreen.swift */,
+				70EFA60A2C72A91500A45190 /* ToursListViewModel.swift */,
+				70BDDC202C7A523B00C4E735 /* TourScreen.swift */,
+				70BDDC292C7A586300C4E735 /* TourViewModel.swift */,
+			);
+			path = Tours;
+			sourceTree = "<group>";
+		};
+		70EFA5FC2C72A25A00A45190 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				70BB35492C71444500120FA6 /* SocketIOSensorDatasource.swift */,
+				70BB354B2C71445000120FA6 /* EstimoteSensorDatasource.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		70EFA5FD2C72A26400A45190 /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA5FE2C72A28100A45190 /* LocalToursDatasource.swift */,
+			);
+			path = Tours;
+			sourceTree = "<group>";
+		};
+		70EFA6042C72A3A100A45190 /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA6022C72A39B00A45190 /* ListToursUseCase.swift */,
+			);
+			path = Tours;
+			sourceTree = "<group>";
+		};
+		70EFA6052C72A3A700A45190 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				70BB35562C71482C00120FA6 /* WatchSensorsUseCase.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		70EFA6062C72A44C00A45190 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				70BB356A2C71513100120FA6 /* WatchSensorsUseCaseTests.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		70EFA6072C72A45200A45190 /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA6082C72A46900A45190 /* ListToursUseCaseTests.swift */,
+			);
+			path = Tours;
+			sourceTree = "<group>";
+		};
+		70EFA60C2C72AB6A00A45190 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA60D2C72AB7600A45190 /* Screens */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		70EFA60D2C72AB7600A45190 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA60E2C72AB7B00A45190 /* Tours */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		70EFA60E2C72AB7B00A45190 /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				70EFA60F2C72AB8F00A45190 /* ToursListViewModelTests.swift */,
+			);
+			path = Tours;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70BB35272C713EDB00120FA6 /* UVGTour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70BB35362C713EDC00120FA6 /* Build configuration list for PBXNativeTarget "UVGTour" */;
+			buildPhases = (
+				70BB35242C713EDB00120FA6 /* Sources */,
+				70BB35252C713EDB00120FA6 /* Frameworks */,
+				70BB35262C713EDB00120FA6 /* Resources */,
+				7060048F2C7ECB82003AA384 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UVGTour;
+			packageProductDependencies = (
+			);
+			productName = UVGTour;
+			productReference = 70BB35282C713EDB00120FA6 /* UVGTour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70BB355D2C71510E00120FA6 /* UVGTourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70BB35642C71510E00120FA6 /* Build configuration list for PBXNativeTarget "UVGTourTests" */;
+			buildPhases = (
+				70BB355A2C71510E00120FA6 /* Sources */,
+				70BB355B2C71510E00120FA6 /* Frameworks */,
+				70BB355C2C71510E00120FA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70BB35632C71510E00120FA6 /* PBXTargetDependency */,
+			);
+			name = UVGTourTests;
+			packageProductDependencies = (
+			);
+			productName = UVGTourTests;
+			productReference = 70BB355E2C71510E00120FA6 /* UVGTourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70BB35202C713EDB00120FA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					70BB35272C713EDB00120FA6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					70BB355D2C71510E00120FA6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 70BB35272C713EDB00120FA6;
+					};
+				};
+			};
+			buildConfigurationList = 70BB35232C713EDB00120FA6 /* Build configuration list for PBXProject "UVGTour" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"es-419",
+			);
+			mainGroup = 70BB351F2C713EDB00120FA6;
+			packageReferences = (
+				70BB35702C715B4400120FA6 /* XCRemoteSwiftPackageReference "socket" */,
+			);
+			productRefGroup = 70BB35292C713EDB00120FA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70BB35272C713EDB00120FA6 /* UVGTour */,
+				70BB355D2C71510E00120FA6 /* UVGTourTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70BB35262C713EDB00120FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BB35332C713EDC00120FA6 /* Preview Assets.xcassets in Resources */,
+				705A66682C9A51C80006D62B /* arrow.usdz in Resources */,
+				70BB35302C713EDC00120FA6 /* Assets.xcassets in Resources */,
+				705456212C99D31700E680C6 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BB355C2C71510E00120FA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70BB35242C713EDB00120FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BB353F2C713FC800120FA6 /* Tour.swift in Sources */,
+				70EFA5EF2C7163FD00A45190 /* WebSocketSensor.swift in Sources */,
+				70BB354A2C71444500120FA6 /* SocketIOSensorDatasource.swift in Sources */,
+				70BB35592C71488600120FA6 /* Sensor.swift in Sources */,
+				70BB354C2C71445000120FA6 /* EstimoteSensorDatasource.swift in Sources */,
+				70410AAB2CCB1155009A0546 /* InterestPointView.swift in Sources */,
+				70EFA5F72C72A0A600A45190 /* ToursListScreen.swift in Sources */,
+				70BB35532C7146C000120FA6 /* TestSensorScreen.swift in Sources */,
+				704D30792C83D0A100B2B7C6 /* LocationManager.swift in Sources */,
+				70EFA6032C72A39B00A45190 /* ListToursUseCase.swift in Sources */,
+				70BB352E2C713EDB00120FA6 /* ContentView.swift in Sources */,
+				70EFA5FF2C72A28100A45190 /* LocalToursDatasource.swift in Sources */,
+				70EFA5F42C729F9E00A45190 /* Errors.swift in Sources */,
+				70BB35572C71482C00120FA6 /* WatchSensorsUseCase.swift in Sources */,
+				70BDDC262C7A568C00C4E735 /* Sizes.swift in Sources */,
+				70BDDC1F2C7A4DD500C4E735 /* TourSelection.swift in Sources */,
+				70EFA60B2C72A91500A45190 /* ToursListViewModel.swift in Sources */,
+				70BBC1302C7FC9E200358431 /* TourContainer.swift in Sources */,
+				70BB352C2C713EDB00120FA6 /* UVGTourApp.swift in Sources */,
+				70BB35482C71440E00120FA6 /* SensorRepositoryImpl.swift in Sources */,
+				70EFA6012C72A2F800A45190 /* ToursRepositoryImpl.swift in Sources */,
+				702BBA572C8125460017C722 /* ARTourView.swift in Sources */,
+				70BDDC2A2C7A586300C4E735 /* TourViewModel.swift in Sources */,
+				70BDDC212C7A523B00C4E735 /* TourScreen.swift in Sources */,
+				70DC53322C7D432100F6A45A /* DistanceIndicatorView.swift in Sources */,
+				706004882C7EAA3F003AA384 /* TourProgressIndicatorView.swift in Sources */,
+				70EFA5F92C72A0CF00A45190 /* String+Hardcoded.swift in Sources */,
+				70BDDC242C7A541200C4E735 /* TourStopView.swift in Sources */,
+				70BDDC282C7A570900C4E735 /* TourProgressView.swift in Sources */,
+				70EFA5FB2C72A1CB00A45190 /* ToursRepository.swift in Sources */,
+				70BB35432C71432B00120FA6 /* SensorRepository.swift in Sources */,
+				70BB35552C7147A500120FA6 /* TestSensorViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70BB355A2C71510E00120FA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BB356F2C71523800120FA6 /* FakeSensorsDatasource.swift in Sources */,
+				70BB35612C71510E00120FA6 /* UVGTourTests.swift in Sources */,
+				70BB356B2C71513100120FA6 /* WatchSensorsUseCaseTests.swift in Sources */,
+				70BBC1352C7FCE7200358431 /* TourTests.swift in Sources */,
+				70EFA6092C72A46900A45190 /* ListToursUseCaseTests.swift in Sources */,
+				70EFA6102C72AB8F00A45190 /* ToursListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70BB35632C71510E00120FA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70BB35272C713EDB00120FA6 /* UVGTour */;
+			targetProxy = 70BB35622C71510E00120FA6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		70BB35342C713EDC00120FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70BB35352C713EDC00120FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70BB35372C713EDC00120FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UVGTour/Preview Content\"";
+				DEVELOPMENT_TEAM = 8YQ258U397;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UVGTour/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Turn on to allow \"UVG TOUR\" to connect to accessories.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is utlizied for arkit to give user horizontal and vertical info";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "UVGTour needs access to your location to display directions on the tour.";
+				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "Turn on to allow \"UVG TOUR\" to connect to accessories.";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Turn on to allow \"UVG TOUR\" to connect to accessories.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guillermo.UVGTour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70BB35382C713EDC00120FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UVGTour/Preview Content\"";
+				DEVELOPMENT_TEAM = 8YQ258U397;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UVGTour/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Turn on to allow \"UVG TOUR\" to connect to accessories.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is utlizied for arkit to give user horizontal and vertical info";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "UVGTour needs access to your location to display directions on the tour.";
+				INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription = "Turn on to allow \"UVG TOUR\" to connect to accessories.";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Turn on to allow \"UVG TOUR\" to connect to accessories.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guillermo.UVGTour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70BB35652C71510E00120FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YQ258U397;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guillermo.UVGTourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UVGTour.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UVGTour";
+			};
+			name = Debug;
+		};
+		70BB35662C71510E00120FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8YQ258U397;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guillermo.UVGTourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UVGTour.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UVGTour";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70BB35232C713EDB00120FA6 /* Build configuration list for PBXProject "UVGTour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BB35342C713EDC00120FA6 /* Debug */,
+				70BB35352C713EDC00120FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70BB35362C713EDC00120FA6 /* Build configuration list for PBXNativeTarget "UVGTour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BB35372C713EDC00120FA6 /* Debug */,
+				70BB35382C713EDC00120FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70BB35642C71510E00120FA6 /* Build configuration list for PBXNativeTarget "UVGTourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BB35652C71510E00120FA6 /* Debug */,
+				70BB35662C71510E00120FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		70BB35702C715B4400120FA6 /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 70BB35202C713EDB00120FA6 /* Project object */;
+}
